@@ -318,6 +318,9 @@ export interface FnArgs {
   timeout?: number;
   target_value?: number;
   metric_name?: string;
+  metric_name_a?: string;
+  metric_name_b?: string;
+  math_ops?: string;
   buckets?: string[];
   span_id?: string;
   op?: string;
@@ -328,6 +331,7 @@ export interface FnArgs {
   file_or_uri?: string;
   after?: number;
   seconds?: number;
+  is_ts?: boolean;
 }
 
 export interface RegisterParachainOptions {
